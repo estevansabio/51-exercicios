@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+}
+.pagina{
+     display: grid;
+
+    grid-template-areas: 
+    "header header header header"
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer rodape menu3 menu1"
+    "footer rodape1 menu3 centro";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color: antiquewhite;
+}
+main{
+    grid-area: main;
+    background-color: antiquewhite;
+}
+footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+}
+.ass{
+    grid-area: rodape;
+    background-color: antiquewhite;
+}
+.acc{
+    grid-area: menu1;
+    background-color: antiquewhite;
+}
+.centro{
+    grid-area: centro;
+    background-color: antiquewhite;
+}
+.ahh{
+    grid-area: menu3;
+    background-color: antiquewhite;
+}
+.ajj{
+    grid-area: rodape1;
+    background-color: antiquewhite;
+}
+</style>
+<body>
+    <div class="pagina">
+        <header>Cabeçalho</header>
+
+        <div class="acc">menu1</div>
+
+        <div class="centro">centro</div>
+        <main>
+            <div class="caixa">menu2</div>
+        </main>
+        <div class="ahh">menu3</div>
+
+        <div class="ajj">rodape1</div>
+        <div class="ass">rodape</div>
+        <footer>Rodapé</footer>
+    </div>
+</body>
+</html>

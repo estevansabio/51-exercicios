@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+}
+.pagina{
+     display: grid;
+
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho centro header header"
+    "cabecalho cabecalho cabecalho meio header header"
+    "menu1 menu1 menu main main main"
+    "menu1 menu1 menu3 main main main"
+    "rodape rodape rodape centro1 footer footer"
+    "rodape rodape rodape meio1 footer footer";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color: antiquewhite;
+}
+nav{
+    grid-area: menu;
+    background-color: antiquewhite;
+}
+main{
+    grid-area: main;
+    background-color: antiquewhite;
+}
+footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+}
+.add{
+    grid-area: cabecalho;
+    background-color: antiquewhite;
+}
+.ass{
+    grid-area: rodape;
+    background-color: antiquewhite;
+}
+.att{
+    grid-area: rodape1;
+    background-color: antiquewhite;
+}
+.acc{
+    grid-area: menu1;
+    background-color: antiquewhite;
+}
+.aff{
+    grid-area: meio;
+    background-color: antiquewhite;
+}
+.centro{
+    grid-area: centro;
+    background-color: antiquewhite;
+}
+.ahh{
+    grid-area: menu3;
+    background-color: antiquewhite;
+}
+.app{
+    grid-area: centro1;
+    background-color: antiquewhite;
+}
+.aee{
+    grid-area: meio1;
+    background-color: antiquewhite;
+}
+</style>
+<body>
+    <div class="pagina">
+        <header>Cabeçalho</header>
+        <div class="add">cabecalho</div>
+        <div class="aff">meio</div>
+
+        <nav>menu</nav>
+        <div class="acc">menu1</div>
+
+        <div class="centro">centro</div>
+        <main>
+            <div class="caixa">menu2</div>
+        </main>
+        <div class="ahh">menu3</div>
+
+        <div class="app">centro1</div>
+        <div class="aee">meio1</div>
+        <div class="ass">rodape</div>
+        <footer>Rodapé</footer>
+    </div>
+</body>
+</html>
