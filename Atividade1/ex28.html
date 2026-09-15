@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+}
+.pagina{
+     display: grid;
+
+    grid-template-areas: 
+    "header header centro menu1"
+    "header header menu4 menu5"
+    "menu6 menu7 menu8 rodape1"
+    "menu6 main menu3 rodape1";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 225px 225px 225px 225px;
+    gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color: antiquewhite;
+}
+main{
+    grid-area: main;
+    background-color: antiquewhite;
+}
+footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+}
+.ass{
+    grid-area: rodape;
+    background-color: antiquewhite;
+}
+.acc{
+    grid-area: menu1;
+    background-color: antiquewhite;
+}
+.centro{
+    grid-area: centro;
+    background-color: antiquewhite;
+}
+.ahh{
+    grid-area: menu3;
+    background-color: antiquewhite;
+}
+.ajj{
+    grid-area: rodape1;
+    background-color: antiquewhite;
+}
+.aii{
+    grid-area: Cabecalho;
+    background-color: antiquewhite;
+}
+.abb{
+    grid-area: menu4;
+    background-color: antiquewhite;
+}
+.azz{
+    grid-area: menu5;
+    background-color: antiquewhite;
+}
+.agg{
+    grid-area: menu6;
+    background-color: antiquewhite;
+}
+.aqq{
+    grid-area: menu7;
+    background-color: antiquewhite;
+}
+.axx{
+    grid-area: menu8;
+    background-color: antiquewhite;
+}
+</style>
+<body>
+    <div class="pagina">
+        <header>Cabeçalho</header>  
+
+        <div class="acc">menu1</div>
+        <div class="abb">menu4</div>
+        <div class="azz">menu5</div>
+        <div class="agg">menu6</div>
+        <div class="aqq">menu7</div>
+        <div class="axx">menu8</div>
+
+        <div class="centro">centro</div>
+        <main>
+            <div class="caixa">menu2</div>
+        </main>
+        <div class="ahh">menu3</div>
+
+        <div class="ajj">rodape1</div>
+    </div>
+</body>
+</html>
