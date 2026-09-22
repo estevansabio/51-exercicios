@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+}
+.pagina{
+     display: grid;
+
+    grid-template-areas: 
+    "menu1 menu1 menu6 menu6"
+    "menu10 menu10 nav nav"
+    "menu10 menu10 nav nav";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px;
+}
+nav{
+    grid-area: nav;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-areas:
+    "menu12 menu12" 
+    "menu13 menu19";
+}
+
+.acc{
+    grid-area: menu1;
+    background-color: antiquewhite;
+}
+.agg{
+    grid-area: menu6;
+    background-color: antiquewhite;
+}
+.aee{
+grid-area: menu10;
+background-color: antiquewhite;
+}
+.app{
+    margin: 10px;
+grid-area: menu12;
+background-color: antiquewhite;
+border: 3px solid black;
+}
+.arr{
+grid-area: menu13;
+background-color: antiquewhite;
+border: 3px solid black;
+margin: 10px;
+}
+.aaa{
+grid-area: menu19;
+background-color: antiquewhite;
+border: 3px solid black;
+margin: 10px;
+}
+</style>
+<body>
+    <div class="pagina"> 
+
+        <div class="acc">menu1</div>
+        <div class="agg">menu6</div>
+        <div class="aee">menu10</div>
+
+        <nav class="aqq">
+        <div class="app">menu12</div>
+        <div class="arr">menu13</div>
+        <div class="aaa">menu19</div>
+        </nav>
+
+
+    </div>
+</body>
+</html>

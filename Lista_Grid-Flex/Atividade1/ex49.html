@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+}
+.pagina{
+     display: grid;
+
+    grid-template-areas: 
+    "menu1 menu1 menu1"
+    "menu8 menu9 menu9"
+    "menu8 menu7 menu4";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px;
+}
+.ass{
+    grid-area: rodape;
+    background-color: antiquewhite;
+}
+.acc{
+    grid-area: menu1;
+    background-color: antiquewhite;
+}
+.abb{
+    grid-area: menu4;
+    background-color: antiquewhite;
+}
+.agg{
+    grid-area: menu6;
+    background-color: antiquewhite;
+}
+.aqq{
+    grid-area: menu7;
+    background-color: antiquewhite;
+}
+.axx{
+    grid-area: menu8;
+    background-color: antiquewhite;
+}
+.ayy{
+    grid-area: menu9;
+    background-color: antiquewhite;
+}
+</style>
+<body>
+    <div class="pagina"> 
+
+        <div class="acc">menu1</div>
+        <div class="abb">menu4</div>
+        <div class="aqq">menu7</div>
+        <div class="axx">menu8</div>
+        <div class="ayy">menu9</div>
+        
+    </div>
+</body>
+</html>
